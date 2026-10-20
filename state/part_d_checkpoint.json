@@ -1,0 +1,100 @@
+{
+  "completed": {
+    "S1": {
+      "scenario_id": "S1",
+      "customer_id": "C0007",
+      "order_id": "ORD-100048",
+      "outcome": "REFUND",
+      "refund_inr": 128.25,
+      "reason": "Eligible completed order delivered after 45 minutes.",
+      "retrieved_policy_chunks": 3,
+      "steps": 3,
+      "expected_outcome": "REFUND",
+      "expected_refund_inr": 128.25,
+      "match_expected_outcome": true,
+      "match_expected_refund": true
+    },
+    "S2": {
+      "scenario_id": "S2",
+      "customer_id": "C0008",
+      "order_id": "ORD-100067",
+      "outcome": "REFUND",
+      "refund_inr": 135.0,
+      "reason": "Eligible completed order delivered after 45 minutes.",
+      "retrieved_policy_chunks": 3,
+      "steps": 3,
+      "expected_outcome": "REFUND",
+      "expected_refund_inr": 135.0,
+      "match_expected_outcome": true,
+      "match_expected_refund": true
+    },
+    "S3": {
+      "scenario_id": "S3",
+      "customer_id": "C0016",
+      "order_id": "ORD-100145",
+      "outcome": "ESCALATE",
+      "refund_inr": 1999.0,
+      "reason": "Refund above INR 1000 requires human approval.",
+      "retrieved_policy_chunks": 3,
+      "steps": 3,
+      "expected_outcome": "ESCALATE",
+      "expected_refund_inr": 1999.0,
+      "match_expected_outcome": true,
+      "match_expected_refund": true
+    },
+    "S4": {
+      "scenario_id": "S4",
+      "customer_id": "C0001",
+      "order_id": "ORD-100001",
+      "outcome": "DENIED",
+      "refund_inr": 0.0,
+      "reason": "Delivery took 45 minutes or less.",
+      "retrieved_policy_chunks": 3,
+      "steps": 3,
+      "expected_outcome": "DENIED",
+      "expected_refund_inr": 0.0,
+      "match_expected_outcome": true,
+      "match_expected_refund": true
+    },
+    "S5": {
+      "scenario_id": "S5",
+      "customer_id": "C0003",
+      "order_id": "ORD-100025",
+      "outcome": "DENIED",
+      "refund_inr": 0.0,
+      "reason": "Cancelled or non-completed orders are not refundable.",
+      "retrieved_policy_chunks": 3,
+      "steps": 3,
+      "expected_outcome": "DENIED",
+      "expected_refund_inr": 0.0,
+      "match_expected_outcome": true,
+      "match_expected_refund": true
+    },
+    "S6": {
+      "scenario_id": "S6",
+      "customer_id": "C0001",
+      "order_id": "ORD-999999",
+      "outcome": "NOT_FOUND",
+      "refund_inr": 0.0,
+      "reason": "Order identifier was not found.",
+      "steps": 1,
+      "expected_outcome": "NOT_FOUND",
+      "expected_refund_inr": 0.0,
+      "match_expected_outcome": true,
+      "match_expected_refund": true
+    },
+    "S7": {
+      "scenario_id": "S7",
+      "customer_id": "C0007",
+      "order_id": "ORD-100048",
+      "outcome": "FALLBACK",
+      "refund_inr": 0.0,
+      "reason": "Loop marker detected; safe fallback and human handoff.",
+      "steps": 1,
+      "expected_outcome": "FALLBACK",
+      "expected_refund_inr": 0.0,
+      "match_expected_outcome": true,
+      "match_expected_refund": true
+    }
+  }
+}

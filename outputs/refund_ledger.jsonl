@@ -1,0 +1,2 @@
+{"timestamp": "2026-10-20T18:45:12", "order_id": "ORD-100048", "customer_id": "C0007", "refund_inr": 128.25, "status": "ISSUED", "payment_method": "original_payment_method"}
+{"timestamp": "2026-10-20T18:45:12", "order_id": "ORD-100067", "customer_id": "C0008", "refund_inr": 135.0, "status": "ISSUED", "payment_method": "original_payment_method"}

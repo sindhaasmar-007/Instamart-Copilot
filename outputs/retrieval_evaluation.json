@@ -1,0 +1,10 @@
+{
+  "overlap_words": 10,
+  "chunk_words": 40,
+  "no_overlap_words": 0,
+  "queries_evaluated": 14,
+  "overlap_hits": 12,
+  "no_overlap_hits": 12,
+  "overlap_recall_at_3": 0.8571,
+  "no_overlap_recall_at_3": 0.8571
+}
