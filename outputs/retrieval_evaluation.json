@@ -1,6 +1,6 @@
 {
-  "overlap_words": 10,
   "chunk_words": 40,
+  "overlap_words": 10,
   "no_overlap_words": 0,
   "queries_evaluated": 14,
   "overlap_hits": 12,
