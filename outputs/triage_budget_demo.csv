@@ -99,8 +99,8 @@ T0034,C1188,delivery,classified_json,delivery,53
 T0033,C0714,billing,classified_json,billing,51
 T0160,C0670,none,skipped_empty,,0
 T0087,C0797,technical,flagged_invalid_output,,58
-T0009,C0758,billing,classified_json,billing,51
-T0108,C0340,fraud,classified_json,billing,55
+T0009,C0758,billing,budget_exhausted,,0
+T0108,C0340,fraud,budget_exhausted,,0
 T0054,C0571,delivery,budget_exhausted,,0
 T0025,C0610,billing,budget_exhausted,,0
 T0004,C0721,fraud,budget_exhausted,,0

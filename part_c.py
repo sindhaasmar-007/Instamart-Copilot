@@ -173,9 +173,9 @@ def run_classification(data, few_shot=False, token_budget=100000):
         elif len(text) > MAX_TICKET_LENGTH:
             result["status"] = "flagged_long"
 
-        # Do not call the model after the budget is exhausted
-        elif total_tokens >= token_budget:
-            result["status"] = "budget_exhausted"
+        # Reserve enough tokens before making a model call
+        elif total_tokens + 100 > token_budget:
+         result["status"] = "budget_exhausted"
 
         else:
             # Privacy check before the model call
